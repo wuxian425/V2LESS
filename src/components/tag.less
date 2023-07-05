@@ -1,0 +1,17 @@
+
+/* V2LESS Components.Tag */
+
+.tag {
+	background-color: @v2-tag-background-color !important;
+	color: @v2-tag-color !important;
+	transition: @v2-tag-transition !important;
+
+	.mixin-tag();
+}
+
+#Wrapper.Night .tag {
+	background-color: @v2-night-tag-background-color !important;
+	color: @v2-night-tag-color !important;
+
+	.mixin-tag-night();
+}

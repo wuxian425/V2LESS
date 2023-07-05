@@ -1,0 +1,13 @@
+
+/* V2LESS Font */
+
+body {
+	color: @v2-font-color !important;
+	font-family: @v2-font-family !important;
+	font-size: @v2-font-size !important;
+	font-weight: @v2-font-weight !important;
+}
+
+body:has(#Wrapper.Night) {
+	color: @v2-night-font-color;
+} // 好消息：目前火狐仍未正式支援 :has 僞選擇器。

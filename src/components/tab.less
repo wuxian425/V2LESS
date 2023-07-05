@@ -1,0 +1,58 @@
+
+/* V2LESS Components.Tab */
+
+.tab {
+	border-radius: @v2-tab-border-radius !important;
+  color: @v2-tab-color !important;
+  transition: @v2-tab-transition !important;
+
+  &:hover {
+    background-color: @v2-tab-hover-background-color !important;
+    color: @v2-tab-hover-color !important;
+  }
+
+  .mixin-tab();
+}
+
+.tab_current {
+	background-color: @v2-tab_active-background-color !important;
+	color: @v2-tab_active-color !important;
+  transition: @v2-tab-transition !important;
+
+  &:hover {
+    background-color: @v2-tab_active-hover-background-color !important;
+    color: @v2-tab_active-hover-color !important;
+  }
+
+  .mixin-tab_active();
+}
+
+#Tabs.inner {
+  padding: @v2-tabs_inner-padding !important;
+}
+
+// 暗色模式
+#Wrapper.Night {
+  .tab {
+    color: @v2-night-tab-color !important;
+
+    &:hover {
+      background-color: @v2-night-tab-hover-background-color !important;
+      color: @v2-night-tab-hover-color !important;
+    }
+
+    .mixin-tab-night();
+  }
+
+  .tab_current {
+		background-color: @v2-night-tab_active-background-color !important;
+		color: @v2-night-tab_active-color !important;
+	
+	  &:hover {
+	  	background-color: @v2-night-tab_active-hover-background-color !important;
+	  	color: @v2-night-tab_active-hover-color !important;
+  	}
+
+    .mixin-tab_active-night();
+	}
+}

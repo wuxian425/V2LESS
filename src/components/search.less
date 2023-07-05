@@ -1,0 +1,56 @@
+
+/* V2LESS Components.Search */
+
+#search-container {
+	background-color: @v2-search_container-background-color !important;
+	border: @v2-search_container-border !important;
+	border-radius: @v2-search_container-border-radius !important;
+	height: @v2-search_container-height !important;
+	width: @v2-search_container-width !important;
+	bottom: 1px !important;
+
+	&:hover {
+		background-color: @v2-search_container-hover-background-color !important;
+		border: @v2-search_container-hover-border !important;
+	}
+
+	&.active {
+		background-color: @v2-search_container-active-background-color !important;
+		border: @v2-search_container-active-border !important;
+	}
+
+	&::before {
+		background-size: @v2-search_icon-size !important;
+	}
+
+	#search {
+		font-size: @v2-search-font-size !important;
+		padding: @v2-search-padding !important;
+
+		.mixin-search();
+	}
+
+	.mixin-search_container();
+}
+
+// 暗色模式
+body:has(#Wrapper.Night) #search-container {
+	background-color: @v2-night-search_container-background-color !important;
+	border: @v2-night-search_container-border !important;
+
+	&:hover {
+		background-color: @v2-night-search_container-hover-background-color !important;
+		border: @v2-night-search_container-hover-border !important;
+	}
+
+	&.active {
+		background-color: @v2-night-search_container-active-background-color !important;
+		border: @v2-night-search_container-active-border !important;
+	}
+
+	#search {
+		.mixin-search-night();
+	}
+
+	.mixin-search_container-night();
+}

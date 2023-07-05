@@ -1,0 +1,27 @@
+
+/* V2LESS Link */
+
+a {
+	background-color: @v2-link-background-color !important;
+	color: @v2-link-color !important;
+	transition: @v2-link-transition;
+
+	&:hover {
+		background-color: @v2-link-hover-background-color !important;
+		color: @v2-link-hover-color !important;
+	}
+
+	.mixin-link();
+}
+
+body:has(#Wrapper.Night) a {
+	background-color: @v2-night-link-background-color !important;
+	color: @v2-night-link-color !important;
+
+	&:hover {
+		background-color: @v2-night-link-hover-background-color !important;
+		color: @v2-night-link-hover-color !important;
+	}
+
+	.mixin-link-night();
+} 

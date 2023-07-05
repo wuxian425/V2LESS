@@ -1,0 +1,31 @@
+
+/* V2LESS Components.Select */
+
+select, .select2-selection {
+	background-color: @v2-select-background-color !important;
+	border: @v2-select-border  !important;
+	border-radius: @v2-select-border-radius !important;
+	color: @v2-select-font-color !important;
+	line-height: @v2-select-line-height !important;
+
+	.mixin-select();
+}
+
+select {
+	font-family: @v2-font-family !important;
+	padding: @v2-select-padding !important;
+}
+
+#Wrapper.Night select, 
+#Wrapper.Night .select2-selection {
+	background-color: @v2-night-select-background-color !important;
+	border: @v2-night-select-border !important;
+	color: @v2-night-select-font-color !important;
+
+	.mixin-select-night();
+}
+
+/* 奇怪實現下拉選單的字體渲染顏色在暗色模式下 */
+#Wrapper.Night .select2-selection__rendered {
+	color: @v2-night-select-font-color !important;
+}

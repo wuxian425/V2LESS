@@ -1,0 +1,16 @@
+
+/* V2LESS Background */
+
+body {
+	background-color: @v2-background-color !important; // 亮色模式背景顏色
+}
+
+body:has(#Wrapper.Night) {
+	background-color: @v2-night-background-color !important; // 暗色模式背景顏色
+}
+
+#Wrapper {
+	background-image: none !important; //虛僞的陰影
+	background-color: transparent !important; // 亮色模式背景顏色
+	// 或者你可以換成用 Background 之類的...
+}

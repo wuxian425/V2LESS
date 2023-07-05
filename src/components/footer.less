@@ -1,0 +1,44 @@
+
+/* V2LESS Components.Footer */
+
+#Bottom {
+	background-color: @v2-footer-background-color !important;
+	border-top: none !important;
+
+	// 容器
+	.content .inner {
+		font-size: @v2-footer-font-size !important;
+		padding: @v2-footer-padding !important;
+	}
+	
+	// 分隔點
+	.snow {
+		color: @v2-footer-snow-color !important;
+	} // 不用 JavaScript 似乎是無法修改文字的？ Content 只在 :before/:after 生效。
+	
+	// 第一行鏈接
+	strong {
+		display: @v2-footer-link-display !important;
+		font-size: @v2-footer-link-font-size !important;
+	}
+
+	// 最底部
+	span.small.fade {
+		display: @v2-footer-end-display !important;
+	}
+
+	.mixin-footer();
+}
+
+// 暗色模式分隔點
+body:has(#Wrapper.Night) #Bottom {
+	background-color: @v2-night-footer-background-color !important;
+
+	.snow {
+		color: @v2-night-footer-snow-color !important;
+	}
+
+	.mixin-footer-night();
+}
+
+// P.S. 站長就不能放幾個 ID 方便定位嗎...（哭）

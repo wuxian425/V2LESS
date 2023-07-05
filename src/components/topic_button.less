@@ -1,0 +1,55 @@
+
+/* V2LESS Components.Topic_Button */
+
+.topic_buttons {
+	background: #EEEEEE !important;
+	background-color: @v2-topic_button_container-background-color !important;
+
+	.topic_stats {
+		color: @v2-topic_button-color !important;
+		text-shadow: none !important;
+
+		.mixin-topic_stats();
+	}
+
+	.tb {
+		background-color: @v2-topic_button-background-color !important;
+		color: @v2-topic_button-color !important;
+		text-shadow: none !important;
+
+		.mixin-topic_button();
+
+		&:hover {
+			background-color: @v2-topic_button-hover-background-color !important;
+			color: @v2-topic_button-hover-color !important;
+		}
+	}
+
+	.mixin-topic_button_container();
+}
+
+// 暗色模式
+#Wrapper.Night .topic_buttons {
+	background: #484848 !important;
+	background-color: @v2-night-topic_button_container-background-color !important;
+
+	.topic_stats {
+		color: @v2-night-topic_button-color !important;
+
+		.mixin-night-topic_stats();
+	}
+
+	.tb {
+		background-color: @v2-night-topic_button-background-color !important;
+		color: @v2-night-topic_button-color !important;
+
+		.mixin-night-topic_button();
+
+		&:hover {
+			background-color: @v2-night-topic_button-hover-background-color !important;
+			color: @v2-night-topic_button-hover-color !important;
+		}
+	}
+
+	.mixin-night-topic_button_container();
+}

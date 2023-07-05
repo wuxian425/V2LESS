@@ -1,0 +1,21 @@
+
+/* V2LESS Components.Input */
+
+.sl, .mll, .ml {
+	background-color: @v2-input-background-color !important;
+	border: @v2-input-border !important;
+	border-radius: @v2-input-border-radius !important;
+	padding: @v2-input-padding !important;
+	transition: @v2-input-transition !important;
+
+	.mixin-input();
+}
+
+#Wrapper.Night {
+	.sl, .mll, .ml {
+		background-color: @v2-night-input-background-color !important;
+		border: @v2-night-input-border !important;
+
+		.mixin-input-night();
+	}
+}

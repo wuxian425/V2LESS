@@ -1,0 +1,22 @@
+
+/* V2LESS Components.PageContentHeader */
+
+.page-content-header {
+	img {
+		display: @v2-page_content_header_image-display !important;
+		height: @v2-page_content_header_image-height !important;
+		width: @v2-page_content_header_image-width !important;
+
+		.mixin-page_content_header_image();
+	}
+
+	h2 {
+		font-size: @v2-page_content_header_title-font-size !important;
+		font-weight: @v2-page_content_header_title-font-weight !important;
+
+		.mixin-page_content_header_title();
+	}
+}
+
+// 這玩意應該不用暗色模式了吧... 
+// 再加個暗色模式塞不下了嗚嗚嗚...

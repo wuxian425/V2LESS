@@ -1,0 +1,28 @@
+{
+  "name": "v2ex.less",
+  "version": "1.0.0",
+  "description": "Make V2EX beautiful again. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "lessc src/index.less dist/v2.css --clean-css=\"--s1 --advanced --compatibility=ie8\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wuxian425/v2less.git"
+  },
+  "keywords": [
+    "V2EX",
+    "V2LESS",
+    "V2CSS",
+    "Forum",
+    "CSS",
+    "LESS"
+  ],
+  "author": "wuxian425",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wuxian425/v2less/issues"
+  },
+  "homepage": "https://github.com/wuxian425/v2less#readme"
+}

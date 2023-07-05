@@ -1,0 +1,38 @@
+
+/* V2LESS Components.Box */
+
+.box {
+	background-color: @v2-box-background-color !important;
+	border-radius: @v2-box-border-radius !important; // 徹底拋棄原 CSS 設置的 CSS Variable！
+	border-bottom: none !important;
+	border: @v2-box-border !important; // 覆蓋
+	box-shadow: @v2-box-box-shadow !important;
+
+	.mixin-box();
+}
+
+#Tabs {
+	background-color: @v2-box-background-color !important;
+	border-top-left-radius: @v2-box-border-radius !important; // 和 Box 共用上部圓角。
+	border-top-right-radius: @v2-box-border-radius !important; // 和 Box 共用上部圓角。
+}// 區區咲太，竟敢如此囂張！
+
+.topic_buttons {
+	border-bottom-left-radius: @v2-box-border-radius !important; // 和 Box 共用下部圓角。
+	border-bottom-right-radius: @v2-box-border-radius !important; // 和 Box 共用下部圓角。
+}// 區區麻衣，竟敢如此囂張！（霧）
+
+// 暗色模式
+#Wrapper.Night {
+	.box {
+		background-color: @v2-night-box-background-color !important;
+		border: @v2-night-box-border !important;
+		box-shadow: @v2-night-box-box-shadow !important;
+
+		.mixin-box-night();
+	}
+
+	#Tabs {
+		background-color: @v2-night-box-background-color !important;
+	}// 咲太被打死力（悲）
+}

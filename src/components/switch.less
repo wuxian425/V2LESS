@@ -1,0 +1,34 @@
+
+/* V2LESS Components.Switch */
+
+.onoffswitch {
+	/* 好大一个滑动块 */
+	min-width: @v2-switch-width !important;
+	width: @v2-switch-width !important;
+
+	.frame::before {
+		background-color: @v2-switch_on-background-color !important;
+		content: '' !important;
+	}// ON
+
+	.frame::after {
+		background-color: @v2-switch_off-background-color !important;
+		content: '' !important;
+	}// OFF
+
+	.mixin-switch();
+}
+
+#Wrapper.Night .onoffswitch {
+	.frame::before {
+		background-color: @v2-night-switch_on-background-color !important;
+		content: '' !important;
+	}// ON
+
+	.frame::after {
+		background-color: @v2-night-switch_off-background-color !important;
+		content: '' !important;
+	}// OFF
+
+	.mixin-switch-night();
+}

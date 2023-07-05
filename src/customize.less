@@ -1,0 +1,332 @@
+
+/* V2LESS Customize */
+
+// Global
+	// Background
+		@v2-background-color: #F8F8F8; // 背景顏色（亮）
+		@v2-night-background-color: #222222; // 背景顏色（暗）
+	// Font
+		// 引入字體（預設引入 Noto Sans SC，字重為 400 及 700。）
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap'); // family=Poppins:wght@400;700&
+			//
+			//	部分地區可能過不了打包，請自行尋找 Google Fonts 鏡像源。
+			//
+		@v2-font-color: #121212; // 文字顏色（亮）
+		@v2-night-font-color: #D4D4D4; // 文字顏色（暗）
+		@v2-font-family: "Poppins", "Noto Sans SC", sans-serif; // 字體家族
+		@v2-font-size: 16px; // 字體大小
+		@v2-font-weight: 400; // 字重
+	// Link
+		@v2-link-background-color: transparent; // 鏈接的背景顏色（亮）
+		@v2-night-link-background-color: transparent; // 鏈接的背景顏色（暗）
+		@v2-link-color: #777788; // 鏈接的顏色（亮）
+		@v2-night-link-color: #DDDDDE; // 鏈接的顏色（暗）
+		@v2-link-transition: 0.25s; // 鏈接的狀態變化動畫
+		// :hover
+		@v2-link-hover-background-color: transparent; // 鏈接被鼠標懸浮時的背景顏色（亮）
+		@v2-night-link-hover-background-color: transparent; // 鏈接被鼠標懸浮時的背景顏色（暗）
+		@v2-link-hover-color: #555566; // 鏈接被鼠標懸浮時的顏色（亮）
+		@v2-night-link-hover-color: #BBBBBD; // 鏈接被鼠標懸浮時的顏色（暗）
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-link() {}
+		.mixin-link-night() {}
+
+// Components
+	// Box
+		@v2-box-background-color: #FFF; // Box 背景顏色（亮）
+		@v2-night-box-background-color: #121212; // Box 背景顏色（暗）
+		@v2-box-border: 1px solid #E2E2E2; // Box 邊框（亮）
+		@v2-night-box-border: none; // Box 邊框（暗）
+		@v2-box-border-radius: 8px; // Box 圓角
+		@v2-box-box-shadow: 0 2px 6px #DEDEDE; // Box 陰影（亮）
+		@v2-night-box-box-shadow: none; // Box 陰影（暗）
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-box() {}
+		.mixin-box-night() {}
+
+	// Button
+		// 按鈕通用
+			@v2-button-border-radius: 6px; // 按鈕圓角大小
+			@v2-button-font-weight: 400; // 按鈕字重
+			@v2-button-text-shadow: none; // 按鈕文字陰影
+			@v2-button-transition: 0.25s; // 按鈕狀態變化動畫
+		// (.normal)
+			// background-color
+				@v2-button_normal-background-color: #FFFFFF; // (.normal) 按鈕背景顏色（亮）
+				@v2-night-button_normal-background-color: #101010; // (.normal) 按鈕背景顏色（暗）
+			// border
+				@v2-button_normal-border: 1px solid #E2E2E2; // (.normal) 按鈕邊框（亮）
+				@v2-night-button_normal-border: 1px solid #AAAAAA; // (.normal) 按鈕邊框（暗）
+			// box-shadow
+				@v2-button_normal-box-shadow: 0 1px 2px #62626244; // (.normal) 按鈕陰影（亮）
+				@v2-night-button_normal-box-shadow: 0 1px 2px #CCCCDA33; // (.normal) 按鈕陰影（暗）
+			// font-color
+				@v2-button_normal-font-color: #101010; // (.normal) 按鈕文字顏色（亮）
+				@v2-night-button_normal-font-color: #FCFCFC; // (.normal) 按鈕文字顏色（暗）
+		// (.normal):hover
+			// background-color
+				@v2-button_normal-hover-background-color: #DDDDDD; // (.normal) 按鈕鼠標懸浮時的背景顏色（亮）
+				@v2-night-button_normal-hover-background-color: #363636; // (.normal) 按鈕鼠標懸浮時的背景顏色（暗）
+			// border
+				@v2-button_normal-hover-border: 1px solid #D2D2D2; // (.normal) 按鈕鼠標懸浮時的邊框（亮）
+				@v2-night-button_normal-hover-border: 1px solid #AAAAAA; // (.normal) 按鈕鼠標懸浮時的邊框（暗）
+			// box-shadow
+				@v2-button_normal-hover-box-shadow: 0 1px 2px #42424D33; // (.normal) 按鈕鼠標懸浮時的陰影（亮）
+				@v2-night-button_normal-hover-box-shadow: 0 1px 2px #CCCCDA33; // (.normal) 按鈕鼠標懸浮時的陰影（暗）
+			// font-color
+				@v2-button_normal-hover-font-color: #101010; // (.normal) 按鈕鼠標懸浮時的文字顏色（亮）
+				@v2-night-button_normal-hover-font-color: #FCFCFC; // (.normal) 按鈕鼠標懸浮時的文字顏色（暗）
+		// (.special)
+			// background-color
+				@v2-button_special-background-color: #FFCC00; // (.special) 按鈕背景顏色（亮）
+				@v2-night-button_special-background-color: #D6AB00; // (.special) 按鈕背景顏色（暗）
+			// border
+				@v2-button_special-border: 1px solid #C89600; // (.special) 按鈕邊框（亮）
+				@v2-night-button_special-border: 1px solid #C89600; // (.special) 按鈕邊框（暗）
+			// box-shadow
+				@v2-button_special-box-shadow: 0 1px 2px #E9AF0080; // (.special) 按鈕陰影（亮）
+				@v2-night-button_special-box-shadow: 0 1px 2px #E9AF0080; // (.special) 按鈕陰影（暗）
+			// font-color
+				@v2-button_special-font-color: #242432; // (.special) 按鈕文字顏色（亮）
+				@v2-night-button_special-font-color: #242432; // (.special) 按鈕文字顏色（亮）
+		// (.special):hover
+			// background-color
+				@v2-button_special-hover-background-color: #C89600; // (.special) 按鈕鼠標懸浮時的背景顏色（亮）
+				@v2-night-button_special-hover-background-color: #C89600; // (.special) 按鈕鼠標懸浮時的背景顏色（暗）
+			// border
+				@v2-button_special-hover-border: 1px solid #C89600; // (.special) 按鈕鼠標懸浮時的邊框（亮）
+				@v2-night-button_special-hover-border: 1px solid #C89600; // (.special) 按鈕鼠標懸浮時的邊框（暗）
+			// box-shadow
+				@v2-button_special-hover-box-shadow: 0 1px 2px #E9AF0080; // (.special) 按鈕鼠標懸浮時的陰影（亮）
+				@v2-night-button_special-hover-box-shadow: 0 1px 2px #E9AF0080; // (.special) 按鈕鼠標懸浮時的陰影（暗）
+			// font-color
+				@v2-button_special-hover-font-color: #242432; // (.special) 按鈕鼠標懸浮時的文字顏色（亮）
+				@v2-night-button_special-hover-font-color: #242432; // (.special) 按鈕鼠標懸浮時的文字顏色（亮）
+		// (.super)
+			@v2-button_super-background-image: none; // (.super) 按鈕內部陰影
+			@v2-button_super-padding: 4px 15px; // (.super) 按鈕內間距
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-button() {}
+		.mixin-button-night() {} 
+
+	// Cell
+		@v2-cell-padding: 16px;	// Cell 的內邊距
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-cell() {
+			//&.item {
+			//	transition: 0.25s;
+			//}
+
+			//&.item:hover {
+			//	padding: 24px 16px !important;
+			//} // 被鼠標懸浮的文章聚焦！
+		}
+		.mixin-cell-night() {}
+
+	// Count_Livid
+		@v2-count_livid-background-color: #DDDDDD; // 計數背景顏色（亮）
+		@v2-night-count_livid-background-color: #282828; // 計數背景顏色（暗）
+		@v2-count_livid-border-radius: 9999px; // 計數圓角大小
+		@v2-count_livid-color: #FFFFFF; // 計數文字顏色（亮）
+		@v2-night-count_livid-color: #121212; // 計數文字顏色（暗）
+		// :hover
+		@v2-count_livid-hover-background-color: #CCCCCC; // 計數鼠標懸浮時的背景顏色（亮）
+		@v2-night-count_livid-hover-background-color: #222222; // 計數鼠標懸浮時的背景顏色（暗）
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-count_livid() {}
+		.mixin-count_livid-night() {}
+
+	// Footer
+		@v2-footer-background-color: #FFFFFF; // 頁腳的背景顏色（亮）
+		@v2-night-footer-background-color: #121212; // 頁腳的背景顏色（暗）
+		@v2-footer-font-size: 14px; // 頁腳的字體大小
+		@v2-footer-padding: 12px; // 頁腳的內邊距
+		// Snow（分隔點）
+		@v2-footer-snow-color: #AAAAAA; // 分隔點的顏色（亮）
+		@v2-night-footer-snow-color: #AAAAAA; // 分隔點的顏色（暗）
+		// 第一行（鏈接）
+		@v2-footer-link-display: inline-block; // 頁腳鏈接顯示（inline-block/none 表 顯示/隱藏）
+		@v2-footer-link-font-size: 12px; // 頁腳鏈接字體大小
+		// 最後一塊
+		@v2-footer-end-display: none; // 頁腳最後一塊顯示（inline-block/none 表 顯示/隱藏）
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-footer() {}
+		.mixin-footer-night() {}
+
+	// Header
+		@v2-header-background-color: #FFFFFF; // Header 的背景顏色（亮）
+		@v2-night-header-background-color: #121212; // Header 的背景顏色（暗）
+		@v2-header-border-bottom: 1px solid #E2E2E2; // Header 的底邊邊框（亮）
+		@v2-night-header-border-bottom: none; // Header 的底邊邊框（暗）
+		@v2-header-box-shadow: 0 2px 6px #DEDEDE; // Header 的陰影（亮）
+		@v2-night-header-box-shadow: none; // Header 的陰影（暗）
+		@v2-header-padding: 12px 0 8px 0; // Header 的內邊距
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-header() {}
+		.mixin-header-night() {}
+
+	// Input
+		@v2-input-background-color: #FFFFFF; // Input 的背景顏色（亮）
+		@v2-night-input-background-color: #121212; // Input 的背景顏色（暗）
+		@v2-input-border: 1px solid #E2E2E2; // Input 的邊框（亮）
+		@v2-night-input-border: 1px solid #242424; // Input 的邊框（暗）
+		@v2-input-border-radius: 4px; // Input 的圓角大小
+		@v2-input-padding: 6px; // Input 的內邊距
+		@v2-input-transition: 0.25; // Input 的狀態變化動畫
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-input() {
+			&:focus {
+				border: 1px solid #D6D6D6 !important;
+			}
+		}
+		.mixin-input-night() {
+			&:focus {
+				border: 1px solid #363636 !important;
+			}
+		}
+
+	// Member Activity
+		@v2-member_activity_bar-height: 5px; // 能量條高度
+
+	// Page Button
+		@v2-page_button-border-radius: 4px; // 頁面按鈕圓角大小
+		@v2-page_button-line-height: 14px; // 頁面按鈕行高
+		@v2-page_button-padding: 3px 6px; // 頁面按鈕內邊距
+
+	// Page Content Header
+		// 圖片（圖標？）
+		@v2-page_content_header_image-display: none; // 頁面頂部圖片是否顯示（none/inline-block）
+		@v2-page_content_header_image-height: 48px; // 頁面頂部圖片高度
+		@v2-page_content_header_image-width: 48px; // 頁面頂部圖片寬度
+		// 標題
+		@v2-page_content_header_title-font-size: 1.5em; // 頁面頂部標題文字大小
+		@v2-page_content_header_title-font-weight: 700; // 頁面頂部標題文字字重
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-page_content_header_image() {}
+		.mixin-page_content_header_title() {}
+
+	// Search
+		@v2-search_container-background-color: #F8F8F8; // Search 容器背景顏色（亮）
+		@v2-night-search_container-background-color: #222222; // Search 容器背景顏色（暗）
+		@v2-search_container-border: 1px solid #E2E2E2; // Search 容器邊框（亮）
+		@v2-night-search_container-border: 1px solid #242424; // Search 容器邊框（暗）
+		@v2-search_container-border-radius: 4px; // Search 容器圓角大小
+		@v2-search_container-height: 24px; // Search 容器高度
+		@v2-search_container-width: 160px; // Search 容器寬度
+		// Search Input
+		@v2-search-font-size: 12px; // Search 字體大小
+		@v2-search-padding: 2px; // Search 內邊距
+		// Search Icon
+		@v2-search_icon-size: 12px 12px;
+		// :hover
+		@v2-search_container-hover-background-color: #F8F8F8; // Search 容器被鼠標懸浮時的背景顏色（亮）
+		@v2-night-search_container-hover-background-color: #222222; // Search 容器被鼠標懸浮時的背景顏色（暗）
+		@v2-search_container-hover-border: 1px solid #D6D6D6; // Search 容器被鼠標懸浮時的邊框（亮）
+		@v2-night-search_container-hover-border: 1px solid #363636; // Search 容器被鼠標懸浮時的邊框（暗）
+		// :active
+		@v2-search_container-active-background-color: #F8F8F8; // Search 容器 Active 時的背景顏色（亮）
+		@v2-night-search_container-active-background-color: #222222; // Search 容器 Active 時的背景顏色（暗）
+		@v2-search_container-active-border: 1px solid #727272; // Search 容器 Active 時的邊框（亮）
+		@v2-night-search_container-active-border: 1px solid #ACACAC; // Search 容器 Active 時的邊框（暗）
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-search() {}
+		.mixin-search-night() {}
+		.mixin-search_container() {
+			//&.active {
+			//	width: 220px !important;
+			//} // 當被聚焦時加長搜索框
+		}
+		.mixin-search_container-night() {}
+
+	// Select
+		@v2-select-background-color: #FFFFFF; // Select 背景顏色（亮）
+		@v2-night-select-background-color: #121212; // Select 背景顏色（暗）
+		@v2-select-border: 1px solid #E2E2E2;	// Select 邊框（亮）
+		@v2-night-select-border: 1px solid #242424;	// Select 邊框（暗）
+		@v2-select-border-radius: 4px; // Select 圓角大小
+		@v2-select-font-color: #121212; // Select 字體顏色（亮）
+		@v2-night-select-font-color: #FCFCFC; // Select 字體顏色（暗）
+		@v2-select-line-height: 28px; // Select 行高
+		@v2-select-padding: 4px 8px; // Select 內邊距
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-select() {}
+		.mixin-select-night() {}
+
+	// Switch
+		@v2-switch-width: 65px; // Switch 寬度
+		// ~ON
+		@v2-switch_on-background-color: #55CC22; // Switch 在 ON 狀態時的背景顏色（亮）
+		@v2-night-switch_on-background-color: #22AA00;// Switch 在 ON 狀態時的背景顏色（暗）
+		// ~OFF
+		@v2-switch_off-background-color: #E0E0E0; // Switch 在 OFF 狀態時的背景顏色（亮）
+		@v2-night-switch_off-background-color: #606060; // Switch 在 OFF 狀態時的背景顏色（暗）
+		// 填入你想自定義的 CSS（詳見文檔）
+		.mixin-switch() {}
+		.mixin-switch-night() {}
+
+	// Tab
+		// 通用
+			@v2-tab-border-radius: 4px; // Tab 圓角
+			@v2-tab-transition: 0.25s; // Tab 狀態變化動畫
+		// (NORMAL)
+			@v2-tab-color: #444444; // Tab 的顏色（亮）
+			@v2-night-tab-color: #C8C8C8; // Tab 的顏色（暗）
+		// (NORMAL):hover	
+			@v2-tab-hover-background-color: #EEEEEE; // 當 Tab 被鼠標懸浮時的背景顏色（亮）
+			@v2-night-tab-hover-background-color: #444444; // 當 Tab 被鼠標懸浮時的背景顏色（暗）
+			@v2-tab-hover-color: #101010; // 當 Tab 被鼠標懸浮時的顏色（亮）
+			@v2-night-tab-hover-color: #B8B8B8; // 當 Tab 被鼠標懸浮時的顏色（暗）
+		// (ACTIVE)
+			@v2-tab_active-background-color: #101010; // 當前 Tab 的背景顏色（亮）
+			@v2-night-tab_active-background-color: #CCCCCC; // 當前 Tab 的背景顏色（暗）
+			@v2-tab_active-color: #FCFCFC; // 當前 Tab 的顏色（亮）
+			@v2-night-tab_active-color: #444444; // 當前 Tab 的顏色（暗）
+		// (ACTIVE):hover	
+			@v2-tab_active-hover-background-color: #222222; // 當前 Tab 被鼠標懸浮時的背景顏色（亮）
+			@v2-night-tab_active-hover-background-color: #C4C4C4; // 當前 Tab 被鼠標懸浮時的背景顏色（暗）
+			@v2-tab_active-hover-color: #FCFCFC; // 當前 Tab 被鼠標懸浮時的顏色（亮）
+			@v2-night-tab_active-hover-color: #444444; // 當前 Tab 被鼠標懸浮時的顏色（暗）
+		// Index-Page Tabs
+		@v2-tabs_inner-padding: 16px; // 首頁頂部 Tab （Header 下方）
+		// 填入你想自定義的 CSS （詳見文檔）
+		.mixin-tab() {}
+		.mixin-tab_active() {}
+		.mixin-tab-night() {}
+		.mixin-tab_active-night() {}
+
+	// Tag
+		@v2-tag-background-color: transparent; // Tag 背景顏色（亮）
+		@v2-night-tag-background-color: transparent; // Tag 背景顏色（暗）
+		@v2-tag-color: #777788; // Tag 文字顏色（亮）
+		@v2-night-tag-color: #DDDDEE; // Tag 文字顏色（暗）
+		@v2-tag-transition: 0.25s; // Tag 狀態變化動畫
+		// 填入你想自定義的 CSS （詳見文檔）
+		.mixin-tag() {}
+		.mixin-tag-night() {}
+
+	// Topic Button
+		@v2-topic_button_container-background-color: #EEEEEE; // Topic Button 容器背景顏色（亮）
+		@v2-night-topic_button_container-background-color: #484848; // Topic Button 容器背景顏色（暗）
+		@v2-topic_button-background-color: transparent; // Topic Button 背景顏色（亮）
+		@v2-night-topic_button-background-color: transparent; // Topic Button 背景顏色（暗）
+		@v2-topic_button-color: #363636; // Topic Button 文字顏色（亮）
+		@v2-night-topic_button-color: #D4D4D4; // Topic Button 文字顏色（暗）
+		// :hover
+		@v2-topic_button-hover-background-color: #DDDDDD; // Topic Button 被鼠標懸浮時的背景顏色（亮）
+		@v2-night-topic_button-hover-background-color: #727272; // Topic Button 被鼠標懸浮時的背景顏色（暗）
+		@v2-topic_button-hover-color: #363636; // Topic Button 被鼠標懸浮時的文字顏色（亮）
+		@v2-night-topic_button-hover-color: #D4D4D4; // Topic Button 被鼠標懸浮時的文字顏色（暗）
+		// 填入你想自定義的 CSS （詳見文檔）
+		.mixin-topic_button_container() {}
+		.mixin-topic_button() {}
+		.mixin-topic_stats() {}
+		.mixin-night-topic_button_container() {}
+		.mixin-night-topic_button() {}
+		.mixin-night-topic_stats() {}
+
+		.mixin-index() {
+			.disable_now {
+				display: none;
+			}
+			// 填入你要自定義的樣式
+		}

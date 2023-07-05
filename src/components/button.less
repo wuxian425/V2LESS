@@ -1,0 +1,79 @@
+
+/* V2LESS Components.Button */
+
+.button {
+	border-radius: @v2-button-border-radius !important;
+	font-family: @v2-font-family !important;
+	font-weight: @v2-button-font-weight !important;
+	text-shadow: @v2-button-text-shadow !important;
+	transition: @v2-button-transition !important;
+
+	&.normal,
+	&.normal_page_right {
+		background-color: @v2-button_normal-background-color !important;
+		border: @v2-button_normal-border !important;
+		box-shadow: @v2-button_normal-box-shadow !important;
+		color: @v2-button_normal-font-color !important;
+
+		&:hover {
+			background-color: @v2-button_normal-hover-background-color !important;
+			border: @v2-button_normal-hover-border !important;
+			box-shadow: @v2-button_normal-hover-box-shadow !important;
+			color: @v2-button_normal-hover-font-color !important;
+		}
+	}
+
+	&.special {
+		background-color: @v2-button_special-background-color !important;
+		border: @v2-button_special-border !important;
+		box-shadow: @v2-button_special-box-shadow !important;
+		color: @v2-button_special-font-color !important;
+
+		&:hover {
+			background-color: @v2-button_special-hover-background-color !important;
+			border: @v2-button_special-hover-border !important;
+			box-shadow: @v2-button_special-hover-box-shadow !important;
+			color: @v2-button_special-hover-font-color !important;
+		}
+	}
+
+	&.super {
+		background-image: @v2-button_super-background-image !important;
+		padding: @v2-button_super-padding !important;
+	}
+
+	.mixin-button();
+}
+
+// 暗色模式
+#Wrapper.Night .button {
+	&.normal {
+		background-color: @v2-night-button_normal-background-color !important;
+		border: @v2-night-button_normal-border !important;
+		box-shadow: @v2-night-button_normal-box-shadow !important;
+		color: @v2-night-button_normal-font-color !important;
+
+		&:hover {
+			background-color: @v2-night-button_normal-hover-background-color !important;
+			border: @v2-night-button_normal-hover-border !important;
+			box-shadow: @v2-night-button_normal-hover-box-shadow !important;
+			color: @v2-night-button_normal-hover-font-color !important;
+		}
+	}
+
+	&.special {
+		background-color: @v2-night-button_special-background-color !important;
+		border: @v2-night-button_special-border !important;
+		box-shadow: @v2-night-button_special-box-shadow !important;
+		color: @v2-night-button_special-font-color !important;
+
+		&:hover {
+			background-color: @v2-night-button_special-hover-background-color !important;
+			border: @v2-night-button_special-hover-border !important;
+			box-shadow: @v2-night-button_special-hover-box-shadow !important;
+			color: @v2-night-button_special-hover-font-color !important;
+		}
+	}
+
+	.mixin-button-night();
+}

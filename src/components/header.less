@@ -1,0 +1,24 @@
+
+/* V2LESS Components.Header */
+
+#Top {
+	background-color: @v2-header-background-color !important;
+	border-bottom: @v2-header-border-bottom !important;
+	box-shadow: @v2-header-box-shadow !important;
+	height: auto;
+
+	.content .site-nav {
+			padding: @v2-header-padding !important;
+	}
+
+	.mixin-header();
+}
+
+// 暗色模式
+body:has(#Wrapper.Night) #Top{
+	background-color: @v2-night-header-background-color !important;
+	border-bottom: @v2-night-header-border-bottom !important;
+	box-shadow: @v2-night-header-box-shadow !important;
+
+	.mixin-header-night();
+}

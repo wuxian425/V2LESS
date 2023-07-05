@@ -1,0 +1,26 @@
+
+/* V2LESS Components.Count_Livid */
+
+.count_livid {
+	background-color: @v2-count_livid-background-color !important;
+	border-radius: @v2-count_livid-border-radius !important;
+	color: @v2-count_livid-color !important;
+
+	&:hover {
+		background-color: @v2-count_livid-hover-background-color !important;
+	}
+
+	.mixin-count_livid();
+}
+
+// 暗色模式
+#Wrapper.Night .count_livid {
+	background-color: @v2-night-count_livid-background-color !important;
+	color: @v2-night-count_livid-color !important;
+
+	&:hover {
+		background-color: @v2-night-count_livid-hover-background-color !important;
+	}
+
+	.mixin-count_livid-night();
+}
